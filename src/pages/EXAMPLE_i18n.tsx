@@ -1,7 +1,8 @@
 import { namespaces } from 'i18n/i18n.constants';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-const Home: React.FC = () => {
+
+const example: React.FC = () => {
   const { t } = useTranslation(namespaces.common);
 
   return (
@@ -10,5 +11,3 @@ const Home: React.FC = () => {
     </div>
   );
 };
-
-export default Home;
