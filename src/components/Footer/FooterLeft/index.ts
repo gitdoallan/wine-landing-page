@@ -1,0 +1,1 @@
+export { FooterLeft } from './FooterLeft';
