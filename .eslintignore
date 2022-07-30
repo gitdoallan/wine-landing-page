@@ -1,0 +1,10 @@
+node_modules
+public
+.storebook
+
+*.css
+*.svg
+*.sass
+*.scss
+./*.js
+
