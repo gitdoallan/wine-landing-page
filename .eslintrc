@@ -38,7 +38,7 @@
     "plugin:react-hooks/recommended"
   ],
   "rules": {
-    "arrow-body-style": ["warn", "always"],
+    "arrow-body-style": ["warn", "as-needed"],
     "no-unsafe-finally": "off",
     "no-unused-expressions": "off",
     "@typescript-eslint/ban-ts-comment": "warn",
