@@ -1,8 +1,12 @@
+import Plans from "./components/Plans";
+import Products from "./components/Products";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Olá
+        <Products />
+        <Plans />
       </header>
     </div>
   );
