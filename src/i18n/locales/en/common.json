@@ -1,3 +1,7 @@
 {
-  "welcome": "007"
+  "club" : "Club",
+  "store" : "Store",
+  "producers" : "Producers",
+  "specialOffers" : "Offers",
+  "events" : "Events"
 }
