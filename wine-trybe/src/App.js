@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Plans from "./components/Plans";
 import Products from "./components/Products";
 
@@ -8,6 +9,7 @@ function App() {
         <Products />
         <Plans />
       </header>
+      <Footer />
     </div>
   );
 }
