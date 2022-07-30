@@ -13,4 +13,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: inter, sans-serif;
     background-color: #e5e5e5;
   }
+
+  ul, ol, li {
+    list-style: none;
+  }
 `;
