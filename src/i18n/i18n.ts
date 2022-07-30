@@ -2,7 +2,7 @@ import i18n, { Resource } from 'i18next';
 import LanguageDetector, {
   DetectorOptions,
 } from 'i18next-browser-languagedetector';
-import XHR from 'i18next-http-backend'; // <---- add this
+import XHR from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
 import commonEn from './locales/en/common.json';
@@ -21,7 +21,7 @@ const options: DetectorOptions = {
 };
 
 i18n
-  .use(XHR) // <---- add this
+  .use(XHR)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
