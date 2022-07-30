@@ -1,5 +1,3 @@
-import {} from '@components/oi';
-
 import './i18n/i18n';
 
 import ReactDOM from 'react-dom/client';
