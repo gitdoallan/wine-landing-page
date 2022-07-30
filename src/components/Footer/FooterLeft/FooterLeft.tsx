@@ -1,4 +1,4 @@
-import * as S from './styles';
+import { Container } from './styles';
 
 export const FooterLeft = () => {
   const year = new Date().getFullYear();
@@ -10,12 +10,12 @@ export const FooterLeft = () => {
     { name: 'Diogo Martini', page: 'https://github.com/ogoiddev' },
   ];
   return (
-    <S.Container>
+    <Container>
       <p>
         © Copyright <b>Grupo 007</b> 2022 - {year}. Todos os direitos
         reservados.
       </p>
-      <p>
+      <div>
         Desenvolvido por:
         <ul>
           {authors?.map(({ name, page }) => (
@@ -24,7 +24,7 @@ export const FooterLeft = () => {
             </li>
           ))}
         </ul>
-      </p>
-    </S.Container>
+      </div>
+    </Container>
   );
 };
