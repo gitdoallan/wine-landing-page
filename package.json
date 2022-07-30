@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",
+    "start": "vite --port 3000",
     "sync": "npx typesync",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -13,10 +14,15 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
+    "i18next": "^21.8.16",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "i18next-http-backend": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^11.18.3",
     "react-redux": "^8.0.2",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "devDependencies": {
     "@testing-library/react": "^13.3.0",
