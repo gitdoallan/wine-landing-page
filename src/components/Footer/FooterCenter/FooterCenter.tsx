@@ -1,4 +1,4 @@
-import * as S from './styles';
+import { Container } from './styles';
 
 export const FooterCenter = () => {
   const networks = [
@@ -24,7 +24,7 @@ export const FooterCenter = () => {
     },
   ];
   return (
-    <S.Container>
+    <Container>
       <h3>Alguma dúvida? A gente ajuda você!</h3>
       <h4>Horário de atendimento:</h4>
       <p>De segunda a sexta-feira de 09h as 18h. Exceto feriados.</p>
@@ -39,6 +39,6 @@ export const FooterCenter = () => {
           </a>
         ))}
       </div>
-    </S.Container>
+    </Container>
   );
 };
