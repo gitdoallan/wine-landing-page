@@ -7,4 +7,3 @@ export const apiProducts = axios.create({
 export const apiPlans = axios.create({
   baseURL: "https://wine-club-proxy.herokuapp.com",
 });
-
