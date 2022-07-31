@@ -6,10 +6,10 @@ export const Newsletter = () => {
       <S.NewsletterWrapper>
         <S.NewsletterTitle>
           Assine nossa Newsletter
-          <p>e receba as melhores ofertas e dicas da Wine Club</p>
+          <p>e receba as melhores ofertas e dicas do Clube Wine</p>
         </S.NewsletterTitle>
         <input type="text" placeholder="Digite seu e-mail" />
-        <button>Hello world</button>
+        <button>eu quero!</button>
       </S.NewsletterWrapper>
     </S.NewsletterContainer>
   )
