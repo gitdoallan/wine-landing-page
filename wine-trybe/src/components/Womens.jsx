@@ -1,19 +1,29 @@
 import { womanApi } from "../services/apiWine";
-import './WomensCard.css';
+import "./WomensCard.css";
 
 export default function Womens() {
   return (
     <div className="woman-container">
       {womanApi.map((wine) => (
         <div key={wine.id} className="card-woman-container">
-          <h2>{wine.title}</h2>
-          <div>
+          <h2 className="wine-title">{wine.title}</h2>
+          <div className="text-pic-container">
             <img src={wine.image} alt={wine.title} className="wine-picture" />
-            <p>{wine.comment}</p>
+            <p className="wine-text">{wine.comment}</p>
           </div>
-          <div>
-            <p className="list-name-ingredient">{wine.priceMember}</p>
-            <p className="list-name-ingredient">{wine.priceNmember}</p>
+          <div className="price-container">
+            <div className="socio-container">
+              <p>SÓCIO WINE: R$</p>
+              <p className="wine-price-socio">{(wine.priceMember).toFixed(2)}</p>
+              <div className="btt-add">
+              <button type="button" className="btt-style">Adicionar</button>
+              </div>
+            </div>
+            <div className="nao-socio-container">
+              <p>NÃO SÓCIO: R$</p>
+              <p className="wine-price-nao-socio">{(wine.priceNmember).toFixed(2)}</p>
+              
+            </div>
           </div>
         </div>
       ))}
