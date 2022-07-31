@@ -13,21 +13,29 @@ export const Menu: FC<MenuProps> = ({ children }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const iconProp = {
+    size: 36,
+    color: '#fdfdfd',
+  };
+
   return (
     <S.MenuContainer>
       <S.MenuButton type="button" onClick={() => setIsMenuOpen(prev => !prev)}>
-        {isMenuOpen ? (
-          <X size={36} color={'#fdfdfd'} />
-        ) : (
-          <List size={36} color={'#fdfdfd'} />
-        )}
+        {isMenuOpen ? <X {...iconProp} /> : <List {...iconProp} />}
       </S.MenuButton>
       <S.LinksContainer isMenuOpen={isMenuOpen}>
-        {headerLinks?.navLinks?.map(({ id, text, link, isExternal }) => (
-          <CustomLink key={id} to={link} isExternal={isExternal}>
-            {t(text)}
-          </CustomLink>
-        ))}
+        {headerLinks?.navLinks?.map(
+          ({ id, text, link, isExternal, options }) => (
+            <CustomLink
+              key={id}
+              to={link}
+              isExternal={isExternal}
+              {...(options || {})}
+            >
+              {t(text)}
+            </CustomLink>
+          ),
+        )}
       </S.LinksContainer>
       <div>{children}</div>
     </S.MenuContainer>

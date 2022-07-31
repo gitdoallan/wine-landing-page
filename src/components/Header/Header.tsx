@@ -13,9 +13,9 @@ export const Header: FC = () => (
       <Menu>
         <S.WineBox>
           <img src={winebox} />
+          <LanguageSelector />
         </S.WineBox>
       </Menu>
-      <LanguageSelector />
     </S.HeaderContent>
   </S.HeaderContainer>
 );
