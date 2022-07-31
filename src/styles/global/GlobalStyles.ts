@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html, body {
     font-family: inter, sans-serif;
-    background-color: #e5e5e5;
+    background-color: #FFFBEF;
   }
 
   ul, ol, li {
