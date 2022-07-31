@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import * as S from './styles';
 
 export const FooterLeft = () => {
   const year = new Date().getFullYear();
@@ -10,7 +10,7 @@ export const FooterLeft = () => {
     { name: 'Diogo Martini', page: 'https://github.com/ogoiddev' },
   ];
   return (
-    <Container>
+    <S.Container>
       <p>
         © Copyright <b>Grupo 007</b> 2022 - {year}. Todos os direitos
         reservados.
@@ -25,6 +25,6 @@ export const FooterLeft = () => {
           ))}
         </ul>
       </div>
-    </Container>
+    </S.Container>
   );
 };
