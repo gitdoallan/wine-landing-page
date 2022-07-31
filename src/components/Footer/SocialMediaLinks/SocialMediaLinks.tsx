@@ -11,16 +11,16 @@ export const SocialMediaLinks: FC = () => {
   return (
     <>
       <a href="https://www.facebook.com/winevinhos/">
-        <FacebookLogo />
+        <FacebookLogo size={32} color="#ffffff" weight="fill"/>
       </a>
       <a href="https://twitter.com/wine_vinho">
-        <TwitterLogo />
+        <TwitterLogo size={32} color="#ffffff" weight="fill"/>
       </a>
       <a href="https://www.instagram.com/winevinhos/">
-        <InstagramLogo />
+        <InstagramLogo size={32} color="#ffffff" weight="fill"/>
       </a>
       <a href="https://www.youtube.com/user/WineVinhos">
-        <YoutubeLogo />
+        <YoutubeLogo size={32} color="#ffffff" weight="fill"/>
       </a>
     </>
   );
