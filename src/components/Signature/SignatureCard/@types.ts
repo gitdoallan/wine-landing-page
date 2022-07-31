@@ -22,3 +22,7 @@ export type SignatureCardButtonProps = {
   textAlign?: CSS.Property.TextAlign;
   textTransform?: CSS.Property.TextTransform;
 };
+
+export type IProps = {
+  plan: string;
+}

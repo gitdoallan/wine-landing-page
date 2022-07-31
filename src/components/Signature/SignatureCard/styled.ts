@@ -15,6 +15,45 @@ export const SignatureCardContainer = styled.div`
 export const SignatureCardContent = styled.div`
   margin: 5px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    margin: 15px 0;
+    
+    .benefit {
+      border: 1px solid;
+      
+      width: fit-content;
+      padding: 8px;
+      background: none;
+      color: black;
+      
+    }
+
+    .assign {
+      border: none;
+      padding: 8px;
+      background: ${({ theme }) => theme.colors.yellow};
+      color: black;
+      font-weight: 600;
+      width: 100%;
+
+      :hover {
+        filter: brightness(1.1);
+        transition: 0.3s;
+      }
+    }
+
+
+  }
 `;
 
 export const PlansContainer = styled.div`
@@ -22,6 +61,16 @@ export const PlansContainer = styled.div`
   gap: 10px;
   color: ${({ theme }) => theme.fontColors.primary};
   justify-content: space-around;
+  margin: 15px 0;
+
+  div {
+    .plan {
+      font-size: 0.8rem;
+    }
+    .year {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const PriceContainer = styled.div`
@@ -29,6 +78,19 @@ export const PriceContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 15px 0;
+  .line1 span {
+    text-decoration: line-through;
+  }
+
+  .line2 {
+    font-size: 2.3rem;
+  }
+
+  .line3 span {
+    font-size: 0.8rem;
+  }
+
 `;
 
 export const PlanButton = styled.button<SignatureCardButtonProps>`
