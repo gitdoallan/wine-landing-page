@@ -2,35 +2,40 @@ import React from 'react';
 
 import * as S from './styled';
 
-const SignatureCard: React.FC = () => (
+import {IProps} from './@types'
+
+const SignatureCard: React.FC<IProps> = ({ plan }: IProps) => (
   <S.SignatureCardContainer>
     <S.SignatureCardContent>
       <S.PlansContainer>
         <div>
-          <p>Plano</p>
-          <p>Anual</p>
+          <p className='plan'>{plan}</p>
+          <p className='year'>{plan}</p>
         </div>
         <S.PlanButton
           type="button"
           fontSize={18}
           fontWeight={600}
-          color="primary"
+          color="white"
           radius={50}
-          height={46}
+          height={40}
+          backgroundColor="purple"
         >
           4 MESES OFF
         </S.PlanButton>
       </S.PlansContainer>
 
       <S.PriceContainer>
-        <p>LAST PRICE</p>
-        <p>PRICE</p>
-        <p>economia de</p>
+        <p className='line1'>De <span>R$ 99,90</span> por</p>
+        <p className='line2'><span>R$</span> R$ 79,92 <span>/mes</span></p>
+        <p className='line3'>Economia de R$ 15,98 em 1 mes</p>
       </S.PriceContainer>
+    
+      <div className="buttons">
+        <button className='benefit' type="button">2 Tacas de cristal</button>
+        <button className='assign' type="button">{`Assinatura ${plan}`}</button>
+      </div>
 
-      <button type="button">2 Tacas de cristal</button>
-
-      <button type="button">Assinatura anual</button>
     </S.SignatureCardContent>
   </S.SignatureCardContainer>
 );
