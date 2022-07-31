@@ -1,0 +1,85 @@
+.Footer {
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+
+.divCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0px;
+  gap: 32px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: #555555;
+}
+
+.card1 {
+  border-radius: 15px 50px;
+  color: rgb(29, 28, 28);
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #00B495;
+}
+
+.card1:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.card2 {
+  border-radius: 15px 50px;
+  color: rgb(29, 28, 28);
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #F26649;
+}
+
+.card2:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.card3 {
+  border-radius: 15px 50px;
+  color: rgb(29, 28, 28);
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #EE3E80;
+}
+
+.card3:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.card4 {
+  border-radius: 15px 50px;
+  color: rgb(29, 28, 28);
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #F79552;
+}
+
+.card4:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.logoWine {
+  text-align: center;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.infosWine {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  justify-content: space-evenly;
+}
