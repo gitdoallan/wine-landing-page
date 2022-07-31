@@ -10,7 +10,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: inter, sans-serif;
     background-color: #e5e5e5;
+  }
+
+  ul, ol, li {
+    list-style: none;
   }
 `;

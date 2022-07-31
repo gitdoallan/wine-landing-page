@@ -1,4 +1,4 @@
-import { HeaderLink } from '@components/HeaderLink';
+import { HeaderLink } from '../HeaderLink';
 import { FC } from 'react';
 import { Logo } from '../Logo';
 import { namespaces } from 'i18n/i18n.constants';

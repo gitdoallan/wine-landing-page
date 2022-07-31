@@ -1,7 +1,7 @@
-import * as S from './styles';
+import { Container } from './styles';
 
 export const FooterRight = () => (
-  <S.Container>
+  <Container>
     <div>
       <img
         src="https://img.wine.com.br/fenix/image/_big_bang/logos/logo_w.svg"
@@ -20,5 +20,5 @@ export const FooterRight = () => (
       SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS
       É PROIBIDA PARA MENORES DE 18 ANOS.
     </p>
-  </S.Container>
+  </Container>
 );
