@@ -1,5 +1,5 @@
 import { ReactScrollLinkProps } from 'react-scroll/modules/components/Link';
 
-export type HeaderLinksProps = ReactScrollLinkProps & {
+export type CustomLinksProps = ReactScrollLinkProps & {
   children: React.ReactNode;
 };
