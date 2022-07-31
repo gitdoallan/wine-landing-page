@@ -10,8 +10,12 @@ export const About: FC = () => (
     </S.AboutVideoContainer>
     <S.AboutContent>
       <S.AboutTitle>
-        TODOS ASSINAM A WINE O MAIOR CLUBE DE VINHO DO MUNDO
-        <S.Button>ASSINE AGORA!</S.Button>
+          Faça parte do MAIOR clube de vinhos do mundo!
+          <span>
+            Assine o Clube Wine <br />
+            e ganhe até 4 meses de assinatura grátis.
+          </span>
+        <S.Button>EU QUERO</S.Button>
       </S.AboutTitle>
     </S.AboutContent>
   </S.AboutContainer>

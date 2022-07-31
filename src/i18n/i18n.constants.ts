@@ -3,6 +3,7 @@ export const namespaces = {
   header: 'header',
   htmlTitle: 'htmlTitle',
   footer: 'footer',
+  offers: 'offers',
 };
 
 export const languages = {
