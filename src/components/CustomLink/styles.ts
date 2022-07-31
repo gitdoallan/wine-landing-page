@@ -33,17 +33,17 @@ export const CustomLinkContainer = styled.li`
   }
 
   @media (max-width: 1024px) {
-      &:after {
+    &:after {
       transition: 0.2s;
       width: 99%;
     }
 
-     &:hover {
-    color: ${props => props.theme.colors.grayLight};
-  }
+    &:hover {
+      color: ${props => props.theme.colors.grayLight};
+    }
   }
 `;
 
 export const Anchor = styled.a`
   text-decoration: none;
-   `
+`;

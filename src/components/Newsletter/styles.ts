@@ -10,12 +10,11 @@ export const NewsletterContainer = styled.div`
   max-width: 100%;
   height: 100px;
 
-  @media (max-width: 1024px ) {
+  @media (max-width: 1024px) {
     height: 300px;
     min-width: 350px;
-    
   }
-`
+`;
 
 export const NewsletterWrapper = styled.div`
   display: flex;
@@ -47,8 +46,7 @@ export const NewsletterWrapper = styled.div`
     transition: ease all 2s;
   }
 
-  
-  @media screen and (max-width: 1024px ) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     text-align: center;
     padding: 0 25px;
@@ -57,7 +55,7 @@ export const NewsletterWrapper = styled.div`
       transition: ease all 2s;
     }
   }
-`
+`;
 
 export const NewsletterTitle = styled.div`
   font-size: 1.5rem;
@@ -66,4 +64,4 @@ export const NewsletterTitle = styled.div`
   p {
     font-weight: 700;
   }
-`
+`;

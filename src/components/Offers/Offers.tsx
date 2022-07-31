@@ -1,6 +1,6 @@
+import { namespaces } from 'i18n/i18n.constants';
 import { Gift, Money, Ticket, Truck } from 'phosphor-react';
 import { FC } from 'react';
-import { namespaces } from 'i18n/i18n.constants';
 import { useTranslation } from 'react-i18next';
 
 import OffersAsset from './image.png';

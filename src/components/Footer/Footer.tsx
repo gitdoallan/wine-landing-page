@@ -1,10 +1,10 @@
-import { Logo } from '../Logo';
-import { FC } from 'react';
+import { SocialMediaLinks } from 'components/Footer/SocialMediaLinks';
 import { namespaces } from 'i18n/i18n.constants';
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { footerLinks } from 'services/data/footer/links';
-import { SocialMediaLinks } from 'components/Footer/SocialMediaLinks';
 
+import { Logo } from '../Logo';
 import * as S from './styles';
 
 export const Footer: FC = () => {
@@ -13,13 +13,11 @@ export const Footer: FC = () => {
   return (
     <S.FooterContainer>
       <S.FooterContent>
-
         <S.LogoContent>
           <Logo />
         </S.LogoContent>
 
         <S.ItemsWrapper>
-
           <S.ItemContent>
             <h3>{t('texts.wineClub')}</h3>
             <ul>
@@ -32,7 +30,7 @@ export const Footer: FC = () => {
           <S.ItemContent>
             <h3>{t('texts.developedBy')}</h3>
             <ul>
-              {footerLinks.authors.map((author) => (
+              {footerLinks.authors.map(author => (
                 <li key={author.id}>
                   <a href={author.link}>{author.name}</a>
                 </li>
@@ -42,9 +40,7 @@ export const Footer: FC = () => {
 
           <S.ItemContent>
             <h3>{t('texts.contactUs')}</h3>
-            <p>
-              {t('texts.businessHours')}
-            </p>
+            <p>{t('texts.businessHours')}</p>
             <ul>
               <li>
                 {t('texts.phone')} <b> {footerLinks.phoneNumber.number}</b>
@@ -63,9 +59,7 @@ export const Footer: FC = () => {
               <SocialMediaLinks />
             </S.SocialNetworks>
           </S.ItemContent>
-
         </S.ItemsWrapper>
-
       </S.FooterContent>
 
       <S.FooterContent>
@@ -73,7 +67,6 @@ export const Footer: FC = () => {
           © {currentYear} <b>Grupo 007</b> | {t('texts.copyright')}
         </S.Copyright>
       </S.FooterContent>
-
     </S.FooterContainer>
   );
 };

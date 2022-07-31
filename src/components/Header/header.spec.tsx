@@ -1,5 +1,4 @@
 import { render, screen } from '../../utils/test-utils';
-
 import { Header } from '.';
 
 describe('<Header />', () => {

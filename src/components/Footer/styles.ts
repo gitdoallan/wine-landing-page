@@ -35,23 +35,22 @@ export const FooterContent = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-
     :nth-child(1) {
       height: 450px;
     }
   }
-`
+`;
 
 export const LogoContent = styled.div`
-   display: flex;
-   flex-direction: column;
-   margin-top: 8px;
-   margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-right: 32px;
 
-   svg {
+  svg {
     align-self: center;
     transform: scale(1.4);
-   }
+  }
 
   @media screen and (max-width: 1024px) {
     margin-top: 8px;
@@ -61,39 +60,38 @@ export const LogoContent = styled.div`
       transform: scale(1);
     }
   }
-`
+`;
 
 export const ItemContent = styled.div`
-   display: flex;
-   flex-direction: column;
-   justify-content: start;
-   width: 220px;
-   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 220px;
+  height: 200px;
 
-   h3 {
+  h3 {
     align-self: start;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 1.2rem;
-   }
+  }
 
-   p {
+  p {
     margin-bottom: 20px;
     max-width: 200px;
-   }
+  }
 
-   ul {
+  ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
     min-width: 100px;
-   }
+  }
 
-   li {
+  li {
     color: ${props => props.theme.fontColors.grayLight};
-   }
+  }
 
-  
   @media screen and (max-width: 1024px) {
     max-width: 300px;
     height: auto;
@@ -112,7 +110,7 @@ export const ItemContent = styled.div`
       gap: 8px;
     }
   }
-`
+`;
 
 export const ItemsWrapper = styled.div`
   display: flex;
@@ -120,11 +118,9 @@ export const ItemsWrapper = styled.div`
   justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
-`
-
+`;
 
 export const SocialNetworks = styled.div`
-
   svg {
     margin-right: 10px;
   }
@@ -133,8 +129,8 @@ export const SocialNetworks = styled.div`
     margin-right: 0px;
     margin-bottom: 12px;
   }
-`
+`;
 
 export const Copyright = styled.span`
   color: ${props => props.theme.fontColors.grayLight};
-`
+`;
