@@ -5,6 +5,7 @@ import { IconContext } from "phosphor-react";
 import store from './redux/store';
 import { GlobalStyles } from './styles/global/GlobalStyles';
 import { defaultTheme } from './styles/themes';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => (
   <Provider store={store}>
@@ -18,7 +19,9 @@ const App = () => (
         }}
       >
         <GlobalStyles />
-        <Home />
+        <BrowserRouter>
+          <Home />
+        </BrowserRouter>
       </IconContext.Provider>
     </ThemeProvider>
   </Provider>

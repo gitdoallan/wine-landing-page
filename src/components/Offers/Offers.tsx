@@ -1,13 +1,13 @@
-import {} from './@types';
-
 import { Gift, Money, Ticket, Truck } from 'phosphor-react';
 import { FC } from 'react';
+import { namespaces } from 'i18n/i18n.constants';
+import { useTranslation } from 'react-i18next';
 
 import OffersAsset from './image.png';
 import * as S from './styles';
 
 export const Offers: FC = () => {
-  const offers = [];
+  const { t } = useTranslation(namespaces.offers);
 
   return (
     <S.OffersContainer id="offers">
@@ -16,10 +16,10 @@ export const Offers: FC = () => {
           <S.OffersSVG src={OffersAsset} />
           <S.OffersTopSideText>
             <S.Text size={56} color="primary" weight={700}>
-              Assine Wine
+              {t('texts.signUp')}
             </S.Text>
             <S.Text size={56} color="primary" weight={500}>
-              e descomplica!
+              {t('texts.signUpSlogan')}
             </S.Text>
           </S.OffersTopSideText>
         </S.OffersWrapper>
@@ -29,11 +29,11 @@ export const Offers: FC = () => {
             <S.OffersPrice>4</S.OffersPrice>
             <S.OffersPromotionsDetails>
               <S.Text color="white" size={32}>
-                Clube Wine com até
+                {t('texts.wineClubPromoUpTo')}
               </S.Text>
               <S.Spacer />
               <S.Text color="white" size={96} weight={700}>
-                Meses <br /> gratis
+                {t('texts.monthsCaps')} <br /> {t('texts.free')}
               </S.Text>
             </S.OffersPromotionsDetails>
           </S.OffersPromotions>
@@ -41,34 +41,34 @@ export const Offers: FC = () => {
 
         <S.OffersButtonsWrapper>
           <S.Text color="white" size={28} weight={600} center>
-            Como Sócio Wine você garante benefícios exclusivos
+            {t('texts.benefits')}
           </S.Text>
           <S.OffersButtonsContainer>
             <S.OffersButton>
               <Ticket size={68} color="#212220" weight="duotone" />
               <S.Text rezing size={18}>
-                15% OFF em todas as compras Wine
+                {t('texts.discount')}
               </S.Text>
             </S.OffersButton>
 
             <S.OffersButton>
               <Money size={68} color="#212220" weight="duotone" />
               <S.Text rezing size={18}>
-                3x mais cashback pelo WineUP
+                {t('texts.cashback')}
               </S.Text>
             </S.OffersButton>
 
             <S.OffersButton>
               <Truck size={68} color="#212220" weight="duotone" />
               <S.Text rezing size={18}>
-                Taxa de entrega diferenciada
+                {t('texts.deliveryFeePromo')}
               </S.Text>
             </S.OffersButton>
 
             <S.OffersButton>
               <Gift size={68} color="#212220" weight="duotone" />
               <S.Text rezing size={18}>
-                Brindes e cupons no Indique Amigos
+                {t('texts.referralPromo')}
               </S.Text>
             </S.OffersButton>
           </S.OffersButtonsContainer>
