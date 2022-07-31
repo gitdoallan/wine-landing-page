@@ -11,7 +11,9 @@ export const FooterCenter = () => {
       <h4>{t('texts.businessHoursTitle')}</h4>
       <p>{t('texts.businessHours')}</p>
       <p>
-        <a href={footerLinks.customerService.link}>{t('links.helpCenter')}</a>
+        <a href={footerLinks.customerService.link}>
+          {t(footerLinks.customerService.text)}
+        </a>
       </p>
       <hr />
       <div>

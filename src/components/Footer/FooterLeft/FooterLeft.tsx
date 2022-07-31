@@ -9,7 +9,7 @@ export const FooterLeft = () => {
   return (
     <S.Container>
       <p>
-        © Copyright <b>Grupo 007</b> 2022 - {year}. {t('texts.copyright')}
+        © Copyright <b>Grupo 007 | </b> 2022 - {year}. {t('texts.copyright')}
       </p>
       <div>
         {t('texts.developedBy')}
