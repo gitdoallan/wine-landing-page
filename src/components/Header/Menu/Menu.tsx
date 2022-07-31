@@ -1,12 +1,12 @@
 import { CustomLink } from 'components/CustomLink';
 import { namespaces } from 'i18n/i18n.constants';
-import React from 'react';
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { headerLinks } from 'services/data/header/links';
 
 import * as S from './styles';
 
-export const Menu: React.FC = () => {
+export const Menu: FC = () => {
   const { t } = useTranslation(namespaces.header);
   return (
     <S.MenuContainer>
