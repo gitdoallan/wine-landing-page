@@ -5,6 +5,7 @@ export const namespaces = {
   footer: 'footer',
   about: 'about',
   offers: 'offers',
+  newsletter: 'newsletter',
 };
 
 export const languages = {

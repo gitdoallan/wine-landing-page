@@ -16,9 +16,9 @@ export const LanguageSelector: FC = () => {
 
   return (
       <S.LanguageSelectorContainer>
-        <img src={en} onClick={() => changeLanguage('en')} />
-        <img src={br} onClick={() => changeLanguage('br')} />
-        <img src={es} onClick={() => changeLanguage('es')} />
+        <img alt="English" src={en} onClick={() => changeLanguage('en')} />
+        <img alt="Português brasileiro" src={br} onClick={() => changeLanguage('br')} />
+        <img alt="Español" src={es} onClick={() => changeLanguage('es')} />
       </S.LanguageSelectorContainer>
   );
 };
