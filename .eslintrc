@@ -1,0 +1,115 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "no-mixed-operators",
+    "sonarjs",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "plugin:react-hooks/recommended"
+  ],
+  "rules": {
+    "arrow-body-style": ["warn", "as-needed"],
+    "no-unsafe-finally": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-return-await": "off",
+    "prettier/prettier": "error",
+    "no-await-in-loop": "error",
+    "no-compare-neg-zero": "error",
+    "no-dupe-args": "error",
+    "no-multi-spaces": "error",
+    "default-param-last": "off",
+    "no-param-reassign": "off",
+    "no-redeclare": "error",
+    "max-len": "off",
+    "operator-assignment": ["error", "always"],
+    "prefer-object-spread": "error",
+    "no-mixed-operators/no-mixed-operators": "off",
+    "space-in-parens": "error",
+    "no-multiple-empty-lines": "error",
+    "no-use-before-define": "error",
+    "global-require": "error",
+    "no-console": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true,
+        "allowBind": false,
+        "ignoreRefs": true
+      }
+    ],
+    "react/button-has-type": "error",
+    "react/no-access-state-in-setstate": "error",
+    "react/no-deprecated": 2,
+    "react/state-in-constructor": "off",
+    "react/prop-types": "error",
+    "react/no-unused-prop-types": "error",
+    "react/no-unknown-property": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-direct-mutation-state": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-target-blank": "warn",
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".jsx", ".js", ".tsx", ".ts"]
+      }
+    ],
+    "react/static-property-placement": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-array-index-key": "warn",
+    "react/function-component-definition": [
+      "warn",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "sonarjs/no-identical-expressions": "warn",
+    "sonarjs/no-identical-functions": "warn",
+    "sonarjs/no-redundant-boolean": "error",
+    "sonarjs/no-unused-collection": "error",
+    "sonarjs/prefer-immediate-return": "error",
+    "sonarjs/prefer-single-boolean-return": "error",
+    "sonarjs/no-identical-conditions": "error",
+    "sonarjs/no-inverted-boolean-check": "error",
+    "sonarjs/no-same-line-conditional": "error"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "texts": {
+    "beWine": "¡Sé parte del club de vinos MÁS GRANDE del mundo!",
+    "signUp": "Suscríbete al Club Wine",
+    "signUpBonus": "y obtén hasta 4 meses de membresía gratis.",
+    "signUpBtn": "YO QUIERO"
+  },
+  "links": {
+    "signUp": "https://www.wine.com/signup"
+  }
+}
