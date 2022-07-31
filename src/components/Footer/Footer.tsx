@@ -4,6 +4,7 @@ import { namespaces } from 'i18n/i18n.constants';
 import { useTranslation } from 'react-i18next';
 import { footerLinks } from 'services/data/footer/links';
 import { SocialMediaLinks } from 'components/Footer/SocialMediaLinks';
+import { LanguageSelector } from './LanguageSelector';
 
 import * as S from './styles';
 
@@ -73,6 +74,7 @@ export const Footer: FC = () => {
           © {currentYear} <b>Grupo 007</b> | {t('texts.copyright')}
         </S.Copyright>
       </S.FooterContent>
+      <LanguageSelector />
 
     </S.FooterContainer>
   );

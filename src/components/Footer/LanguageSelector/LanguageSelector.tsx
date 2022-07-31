@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next';
 import en from 'assets/en.png';
 import br from 'assets/br.png';
 import es from 'assets/es.png';
+
+import * as S from './styles';
+
 export const LanguageSelector: FC = () => {
   const { i18n } = useTranslation();
   const { language } = i18n;
@@ -12,19 +15,10 @@ export const LanguageSelector: FC = () => {
   };
 
   return (
-    <select
-      defaultValue={language}
-      onChange={({ target }) => changeLanguage(target.value)}
-    >
-      <option value="en">
-        <img src={en} alt="en" />
-      </option>
-      <option value="es">
-        <img src={es} alt="es" />
-      </option>
-      <option value="pt">
-        <img src={br} alt="pt" />
-      </option>
-    </select>
+      <S.LanguageSelectorContainer>
+        <img src={en} onClick={() => changeLanguage('en')} />
+        <img src={br} onClick={() => changeLanguage('br')} />
+        <img src={es} onClick={() => changeLanguage('es')} />
+      </S.LanguageSelectorContainer>
   );
 };
