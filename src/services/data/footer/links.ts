@@ -27,6 +27,7 @@ export const footerLinks = {
   ],
   customerService: {
     link: 'https://www.wine.com.br/contato',
+    text: 'links.helpCenter',
   },
   authors: [
     {

@@ -4,5 +4,6 @@ export type MenuProps = {
 
 export type SLinksContainer = {
   isMenuOpen: boolean;
+  children: React.ReactNode;
 };
 

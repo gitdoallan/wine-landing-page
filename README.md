@@ -170,3 +170,4 @@ Para a API de modalidades, o link direto: https://wine-club-proxy.herokuapp.com/
 
 ##teste
 ##nova branch
+##publish on cloudflare
