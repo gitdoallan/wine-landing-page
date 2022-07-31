@@ -29,8 +29,8 @@ export const Signature: FC = () => {
       </div>
 
       <div className="child-3">
-        <SignatureCard />
-        <SignatureCard />
+        <SignatureCard plan="Mensal"/>
+        <SignatureCard plan="Anual"/>
       </div>
     </S.Content>
   );
