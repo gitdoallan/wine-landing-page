@@ -55,6 +55,7 @@ export const AboutTitle = styled.h1`
     span {
       font-size: 2rem;
       text-shadow: none;
+      line-height: 1;
     }
   `
 
