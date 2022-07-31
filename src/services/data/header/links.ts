@@ -1,3 +1,10 @@
+
+const defaultOptions = {
+  smooth: true,
+  duration: 500,
+  offset: -90,
+}
+
 export const headerLinks = {
   navLinks: [
     {
@@ -24,9 +31,12 @@ export const headerLinks = {
     {
       id: 4,
       name: 'Offers',
-      link: '#offers',
+      link: 'offers',
       text: 'links.specialOffers',
       isExternal: false,
+      options: {
+        ...defaultOptions
+      }
     },
     {
       id: 5,

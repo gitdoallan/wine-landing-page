@@ -43,3 +43,7 @@ export const CustomLinkContainer = styled.li`
   }
   }
 `;
+
+export const Anchor = styled.a`
+  text-decoration: none;
+   `

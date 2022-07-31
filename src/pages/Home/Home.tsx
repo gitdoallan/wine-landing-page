@@ -1,3 +1,4 @@
+import { Reviews } from 'components/Reviews';
 import React from 'react';
 
 import { About } from '../../components/About';
@@ -12,6 +13,7 @@ export const Home: React.FC = () => (
     <Header />
     <About />
     <Offers />
+    <Reviews />
     <Newsletter />
     <Footer />
   </S.HomeContainer>

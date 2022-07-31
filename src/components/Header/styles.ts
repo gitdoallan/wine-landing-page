@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   height: 90px;
   background: ${props => props.theme.colors.purple};
   border-bottom: ${props => props.theme.colors.purpleLight} 1px solid;
-  z-index: 1;
+  z-index: 3;
 `;
 
 export const HeaderContent = styled.div`

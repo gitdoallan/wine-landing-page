@@ -10,7 +10,7 @@ export const Offers: FC = () => {
   const offers = [];
 
   return (
-    <S.OffersContainer>
+    <S.OffersContainer id="offers">
       <S.Container>
         <S.OffersWrapper>
           <S.OffersSVG src={OffersAsset} />
