@@ -53,15 +53,17 @@ export const AboutTitle = styled.h1`
     font-size: 3rem;
     text-shadow: 2px 2px 3px ${props => props.theme.colors.purpleLight};
     span {
-      font-size: 6rem;
+      font-size: 2rem;
+      text-shadow: none;
     }
   `
 
 export const Button = styled.button`
     align-self: flex-start;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
     padding: 2rem 4rem;
-    background: ${props => props.theme.colors.red};
+    background: ${props => props.theme.colors.purpleDark};
     color: ${props => props.theme.colors.white};
     font-size: 2rem;
     line-height: .1rem;
