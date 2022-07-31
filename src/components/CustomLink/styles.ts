@@ -5,7 +5,6 @@ export const CustomLinkContainer = styled.li`
   justify-content: center;
 
   position: relative;
-  min-width: 100px;
 
   cursor: pointer;
   color: ${props => props.theme.colors.grayLight};
@@ -24,7 +23,8 @@ export const CustomLinkContainer = styled.li`
   }
 
   &:hover {
-    font-weight: 600;
+    color: ${props => props.theme.colors.white};
+    text-shadow: 0 0 10px ${props => props.theme.colors.yellowLight};
 
     &:after {
       transition: 0.2s;
@@ -37,5 +37,9 @@ export const CustomLinkContainer = styled.li`
       transition: 0.2s;
       width: 99%;
     }
+
+     &:hover {
+    color: ${props => props.theme.colors.grayLight};
+  }
   }
 `;

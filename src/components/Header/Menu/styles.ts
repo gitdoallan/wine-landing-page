@@ -4,7 +4,7 @@ import { SLinksContainer } from './@types';
 export const MenuContainer = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
 `;
 
 export const MenuButton = styled.button`
@@ -24,6 +24,7 @@ export const LinksContainer = styled.ul<SLinksContainer>`
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
+  gap: 1.5rem;
 
   @media (max-width: 1024px) {
     display: none;

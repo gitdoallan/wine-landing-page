@@ -5,8 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { List, X } from 'phosphor-react';
 
 import * as S from './styles';
+import { MenuProps } from './@types';
 
-export const Menu: FC = () => {
+export const Menu: FC<MenuProps> = ({ children }) => {
   const { t } = useTranslation(namespaces.header);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,6 +24,7 @@ export const Menu: FC = () => {
         <CustomLink to="d">{t('links.specialOffers')}</CustomLink>
         <CustomLink to="e">{t('links.events')}</CustomLink>
       </S.LinksContainer>
+      <div>{children}</div>
     </S.MenuContainer>
   );
 };
