@@ -13,7 +13,7 @@ export const SocialMediaLinks: FC = () => {
       <a target="_blank" href="https://www.facebook.com/winevinhos/">
         <FacebookLogo size={32} color="#ffffff" weight="fill"/>
       </a>
-      <a target="_blank" href="https://twitter.com/wine_vinho">
+      <a target="_blank" href="https://twitter.com/wine_vinhos">
         <TwitterLogo size={32} color="#ffffff" weight="fill"/>
       </a>
       <a target="_blank" href="https://www.instagram.com/winevinhos/">
