@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import * as S from './styles';
 import { footerLinks } from '../../../services/data/footer/links';
 import { namespaces } from 'i18n/i18n.constants';
 import { useTranslation } from 'react-i18next';
@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 export const FooterCenter = () => {
   const { t } = useTranslation(namespaces.footer);
   return (
-    <Container>
+    <S.Container>
       <h3>{t('texts.helpTitle')}</h3>
       <h4>{t('texts.businessHoursTitle')}</h4>
       <p>{t('texts.businessHours')}</p>
@@ -21,6 +21,6 @@ export const FooterCenter = () => {
           </a>
         ))}
       </div>
-    </Container>
+    </S.Container>
   );
 };
