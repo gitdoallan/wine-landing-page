@@ -1,14 +1,20 @@
 {
   "texts": {
     "helpTitle": "Alguma dúvida? A gente ajuda você!",
-    "businessHoursTitle": "Horário de atendimento:",
-    "businessHours": "De segunda a sexta-feira de 09h as 18h. Exceto feriados.",
+    "businessHoursTitle": "Contato",
+    "businessHours": "Horário de atendimento: De segunda a sexta-feira de 09h as 18h. Exceto feriados.",
     "copyright": "Todos os direitos reservados.",
     "developedBy": "Desenvolvido por:",
     "alcoholWarning": "SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO.",
-    "zip": "CEP: "
+    "wineClub": "CLUBE WINE",
+    "howItWorks": "Como Funciona",
+    "referFriends": "Indique Amigos",
+    "wineBoxEssentials": "WineBox Essentials",
+    "zip": "CEP: ",
+    "phone": "Telefone: ",
+    "socialMedia": "Redes Sociais"
   },
   "links": {
-    "helpCenter": "CENTRAL DE AJUDA"
+    "helpCenter": "Central de Ajuda"
   }
 }
