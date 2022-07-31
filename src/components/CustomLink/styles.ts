@@ -1,27 +1,30 @@
 import styled from 'styled-components';
 
-export const MenuItemContainer = styled.li`
+export const CustomLinkContainer = styled.li`
   display: flex;
-  color: ${props => props.theme.fontColors.primary};
-
-  font-size: 1.125rem;
   justify-content: center;
-  cursor: pointer;
+
+  position: relative;
   min-width: 100px;
+
+  cursor: pointer;
+  color: ${props => props.theme.colors.grayLight};
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
 
   &::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background-color: ${props => props.theme.fontColors.primary};
+    background-color: ${props => props.theme.colors.grayLight};
     position: absolute;
     bottom: -10px;
   }
 
   &:hover {
-    color: ${props => props.theme.fontColors.hover};
-    position: relative;
+    font-weight: 600;
 
     &:after {
       transition: 0.2s;
