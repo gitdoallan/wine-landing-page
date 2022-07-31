@@ -2,6 +2,7 @@ export const namespaces = {
   common: 'common',
   header: 'header',
   htmlTitle: 'htmlTitle',
+  footer: 'footer',
 };
 
 export const languages = {

@@ -1,40 +1,22 @@
 import * as S from './styles';
+import { footerLinks } from '../../../services/data/footer/links';
+import { namespaces } from 'i18n/i18n.constants';
+import { useTranslation } from 'react-i18next';
 
 export const FooterCenter = () => {
-  const networks = [
-    {
-      link: '',
-      icon: 'https://img.wine.com.br/fenix/image/_big_bang/icons/icon-youtube-pink.svg',
-      alt: 'youtube-logo',
-    },
-    {
-      link: '',
-      icon: 'https://img.wine.com.br/fenix/image/_big_bang/icons/icon-instagran-pink.svg',
-      alt: 'instagram-logo',
-    },
-    {
-      link: '',
-      icon: 'https://img.wine.com.br/fenix/image/_big_bang/icons/icon-twitter-pink.svg',
-      alt: 'twitter-logo',
-    },
-    {
-      link: '',
-      icon: 'https://img.wine.com.br/fenix/image/_big_bang/icons/icon-facebook-pink.svg',
-      alt: 'facebook-logo',
-    },
-  ];
+  const { t } = useTranslation(namespaces.footer);
   return (
     <S.Container>
-      <h3>Alguma dúvida? A gente ajuda você!</h3>
-      <h4>Horário de atendimento:</h4>
-      <p>De segunda a sexta-feira de 09h as 18h. Exceto feriados.</p>
+      <h3>{t('texts.helpTitle')}</h3>
+      <h4>{t('texts.businessHoursTitle')}</h4>
+      <p>{t('texts.businessHours')}</p>
       <p>
-        <a href="https://centraldeajuda.wine.com.br/">CENTRAL DE AJUDA</a>
+        <a href={footerLinks.customerService.link}>{t('links.helpCenter')}</a>
       </p>
       <hr />
       <div>
-        {networks?.map(({ icon, link, alt }) => (
-          <a key={alt} href={link}>
+        {footerLinks.socialNetworks.map(({ id, icon, link, alt }) => (
+          <a key={id} href={link}>
             <img src={icon} alt={alt} />
           </a>
         ))}
