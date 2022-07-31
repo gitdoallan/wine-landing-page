@@ -1,26 +1,22 @@
 import { Container } from './styles';
+import { footerLinks } from '../../../services/data/footer/links';
+import { namespaces } from 'i18n/i18n.constants';
+import { useTranslation } from 'react-i18next';
 
 export const FooterLeft = () => {
+  const { t } = useTranslation(namespaces.footer);
   const year = new Date().getFullYear();
-  const authors = [
-    { name: 'Matheus H.', page: 'https://github.com/yMaatheus' },
-    { name: 'Allan Carvalho', page: 'https://github.com/gitdoallan' },
-    { name: 'Emerson Alves', page: 'https://github.com/EmersonAlves019' },
-    { name: 'Adson Reis', page: 'https://github.com/BaianorASR' },
-    { name: 'Diogo Martini', page: 'https://github.com/ogoiddev' },
-  ];
   return (
     <Container>
       <p>
-        © Copyright <b>Grupo 007</b> 2022 - {year}. Todos os direitos
-        reservados.
+        © Copyright <b>Grupo 007</b> 2022 - {year}. {t('texts.copyright')}
       </p>
       <p>
-        Desenvolvido por:
+        {t('texts.developedBy')}
         <ul>
-          {authors?.map(({ name, page }) => (
-            <li key={name}>
-              <a href={page}>{name}</a>
+          {footerLinks.authors.map(({ id, name, link }) => (
+            <li key={id}>
+              <a href={link}>{name}</a>
             </li>
           ))}
         </ul>
