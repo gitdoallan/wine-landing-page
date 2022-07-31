@@ -1,11 +1,11 @@
-import { Container } from './styles';
+import * as S from './styles';
 import { namespaces } from 'i18n/i18n.constants';
 import { useTranslation } from 'react-i18next';
 
 export const FooterRight = () => {
   const { t } = useTranslation(namespaces.footer);
   return (
-    <Container>
+    <S.Container>
       <div>
         <img
           src="https://img.wine.com.br/fenix/image/_big_bang/logos/logo_w.svg"
@@ -21,6 +21,6 @@ export const FooterRight = () => {
         <p>Serra - ES - CEP 29168-090</p>
       </address>
       <p>{t('texts.alcoholWarning')}</p>
-    </Container>
+    </S.Container>
   );
 };
