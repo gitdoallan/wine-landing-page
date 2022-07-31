@@ -6,10 +6,11 @@ export const HeaderContainer = styled.header`
   justify-content: center;
 
   position: fixed;
+  padding: 0 2rem;
 
   width: 100%;
   height: 90px;
-  background: #fff;
+  background: ${props => props.theme.colors.purple};
   z-index: 1;
 `;
 
@@ -21,9 +22,12 @@ export const HeaderContent = styled.div`
   max-width: 1200px;
 `;
 
-export const HeaderLinksContainer = styled.ul`
+export const WineBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style: none;
-`;
+
+  img {
+    width: 50px;
+  }
+`

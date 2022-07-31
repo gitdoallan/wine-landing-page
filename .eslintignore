@@ -6,5 +6,7 @@ public
 *.svg
 *.sass
 *.scss
+*.test*
+*.spec*
 ./*.js
 

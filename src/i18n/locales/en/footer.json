@@ -1,0 +1,14 @@
+{
+  "texts": {
+    "helpTitle": "Any questions? We can help you!",
+    "businessHoursTitle": "Business Hours:",
+    "businessHours": "From Monday to Friday from 9 AM to 6 PM. Except holidays.",
+    "copyright": "All rights reserved.",
+    "developedBy": "Developed by:",
+    "alcoholWarning": "IF YOU DRINK, DON'T DRIVE. ENJOY WITH MODERATION.",
+    "zip": "Zip Code: "
+  },
+  "links": {
+    "helpCenter": "HELP CENTER"
+  }
+}
