@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { apiPlans } from "../services/api";
-import '../planCard.css';
+import '../style/planCard.css';
 
 export default function Plans() {
   const [plans, setPlans] = useState([]);
