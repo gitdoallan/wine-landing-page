@@ -1,5 +1,8 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import brazilIcon from 'assets/brazil.png';
+import spainIcon from 'assets/spain.png';
+import usaIcon from 'assets/usa.png';
 
 export const LanguageSelector: FC = () => {
   const { i18n } = useTranslation();
