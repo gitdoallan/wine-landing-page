@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Logo } from '../Logo';
 import { Menu } from './Menu';
-import { LanguageSelector } from './LanguageSelector';
+import { LanguageSelector } from '../LanguageSelector';
 
 import * as S from './styles';
 

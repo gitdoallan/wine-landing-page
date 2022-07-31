@@ -1,55 +1,75 @@
 import { Logo } from '../Logo';
-import React from 'react';
+import { FC } from 'react';
+import { namespaces } from 'i18n/i18n.constants';
+import { useTranslation } from 'react-i18next';
+import { footerLinks } from 'services/data/footer/links';
+import { SocialMediaLinks } from 'components/Footer/SocialMediaLinks';
 
 import * as S from './styles';
 
-import { FacebookLogo, TwitterLogo, InstagramLogo, YoutubeLogo } from "phosphor-react";
-
-export const Footer: React.FC = () => (
+export const Footer: FC = () => {
+  const { t } = useTranslation(namespaces.footer);
+  const currentYear = new Date().getFullYear();
+  return (
   <S.FooterContainer>
     <S.FooterContent>
+
       <S.LogoContent>
         <Logo />
       </S.LogoContent>
+
       <S.ItemContent>
-        <h3>CLUBE WINE</h3>
+        <h3>{t('texts.wineClub')}</h3>
         <ul>
-          <li>Como Funciona</li>
-          <li>Indique Amigos</li>
-          <li>WineBox Essenciais</li>
+          <li>{t('texts.howItWorks')}</li>
+          <li>{t('texts.referFriends')}</li>
+          <li>{t('texts.wineBoxEssentials')}</li>
         </ul>
       </S.ItemContent>
+
       <S.ItemContent>
-        <h3>Desenvolvedores</h3>
+        <h3>{t('texts.developedBy')}</h3>
         <ul>
-          <li>Allan Carvalho</li>
-          <li>Matheus H.</li>
-          <li>Emerson Alves</li>
-          <li>Diogo Martini</li>
-          <li>Adson Reis</li>
+        { footerLinks.authors.map((author) => (
+            <li key={author.id}>
+              <a href={author.link}>{author.name}</a>
+            </li>
+          )) }
         </ul>
       </S.ItemContent>
+
       <S.ItemContent>
-        <h3>Contato</h3>
-        <p>Horário de atendimento:
-          De segunda a sexta-feira de 09h as 18h. Exceto feriados.</p>
+        <h3>{t('texts.contactUs')}</h3>
+        <p>
+          {t('texts.businessHours')}
+        </p>
         <ul>
-          <li>Telefone: <b>(27) 3202-2600</b></li>
-          <li><a href=""><b>Central de ajuda</b></a></li>
+          <li>
+            <b>{t('texts.phone')} {footerLinks.phoneNumber.number}</b>
+          </li>
+          <li>
+            <a href={footerLinks.customerService.link}>
+              <b>{t(footerLinks.customerService.text)}</b>
+            </a>
+          </li>
         </ul>
       </S.ItemContent>
+
       <S.ItemContent>
-        <h3>Social</h3>
+        <h3>{t('texts.socialMedia')}</h3>
         <S.SocialNetworks>
-          <FacebookLogo size={32} color="#ffffff" weight="fill" />
-          <TwitterLogo size={32} color="#ffffff" weight="fill" />
-          <InstagramLogo size={32} color="#ffffff" weight="fill" />
-          <YoutubeLogo size={32} color="#ffffff" weight="fill" />
+          <SocialMediaLinks />
         </S.SocialNetworks>
       </S.ItemContent>
+
     </S.FooterContent>
+
     <S.FooterContent>
-      <S.Copyright>© 2022 <b>Grupo 007</b> | Todos os direitos reservados</S.Copyright>
+      <S.Copyright>
+        © {currentYear} <b>Grupo 007</b> | {t('texts.copyright')}
+      </S.Copyright>
     </S.FooterContent>
+
   </S.FooterContainer>
-);
+  );
+};
