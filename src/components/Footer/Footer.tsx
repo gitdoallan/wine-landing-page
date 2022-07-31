@@ -18,6 +18,8 @@ export const Footer: FC = () => {
         <Logo />
       </S.LogoContent>
 
+      <S.ItemsWrapper>
+
       <S.ItemContent>
         <h3>{t('texts.wineClub')}</h3>
         <ul>
@@ -61,6 +63,8 @@ export const Footer: FC = () => {
           <SocialMediaLinks />
         </S.SocialNetworks>
       </S.ItemContent>
+
+      </S.ItemsWrapper>
 
     </S.FooterContent>
 
