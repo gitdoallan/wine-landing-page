@@ -1,1 +1,0 @@
-export { FooterCenter } from './FooterCenter';

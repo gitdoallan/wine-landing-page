@@ -5,7 +5,8 @@
     "businessHours": "De lunes a viernes de 09:00 a 18:00. Excepto festivos.",
     "copyright": "Todos los derechos reservados.",
     "developedBy": "Desarrollado por:",
-    "alcoholWarning": "SI BEBE NO CONDUZCA. APRECIE CON MODERACIÓN."
+    "alcoholWarning": "SI BEBE NO CONDUZCA. APRECIE CON MODERACIÓN.",
+    "zip": "Código postal: "
   },
   "links": {
     "helpCenter": "CENTRO DE AYUDA"

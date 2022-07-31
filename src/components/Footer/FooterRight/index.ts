@@ -1,1 +1,0 @@
-export { FooterRight } from './FooterRight';
