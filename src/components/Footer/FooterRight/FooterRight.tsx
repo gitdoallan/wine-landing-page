@@ -18,7 +18,7 @@ export const FooterRight = () => {
       </div>
       <address>
         <p>Rua Comendador Alcides Simão Helou, 1565</p>
-        <p>Serra - ES - CEP 29168-090</p>
+        <p>Serra - ES - {t('texts.zip')} 29168-090</p>
       </address>
       <p>{t('texts.alcoholWarning')}</p>
     </S.Container>

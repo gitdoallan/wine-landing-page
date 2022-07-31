@@ -2,6 +2,7 @@ import { CustomLink } from 'components/CustomLink';
 import { namespaces } from 'i18n/i18n.constants';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { headerLinks } from 'services/data/header/links';
 
 import * as S from './styles';
 
@@ -11,11 +12,11 @@ export const Menu: React.FC = () => {
     <S.MenuContainer>
       <button type="button">menu</button>
       <S.LinksContainer>
-        <CustomLink to="a">{t('links.club')}</CustomLink>
-        <CustomLink to="b">{t('links.store')}</CustomLink>
-        <CustomLink to="c">{t('links.producers')}</CustomLink>
-        <CustomLink to="d">{t('links.specialOffers')}</CustomLink>
-        <CustomLink to="e">{t('links.events')}</CustomLink>
+        {headerLinks.navLinks.map(({ id, text, link, isExternal }) => (
+          <CustomLink key={id} to={link} isExternal={isExternal}>
+            {t(text)}
+          </CustomLink>
+        ))}
       </S.LinksContainer>
     </S.MenuContainer>
   );
