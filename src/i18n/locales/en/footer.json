@@ -1,0 +1,20 @@
+{
+  "texts": {
+    "helpTitle": "Any questions? We can help you!",
+    "contactUs": "Contact Us",
+    "businessHours": "Business Hours: From Monday to Friday from 9 AM to 6 PM. Except holidays.",
+    "copyright": "All rights reserved.",
+    "developedBy": "Developed by",
+    "alcoholWarning": "IF YOU DRINK, DON'T DRIVE. ENJOY WITH MODERATION.",
+    "wineClub": "WINE CLUB",
+    "howItWorks": "How it Works",
+    "referFriends": "Refer Friends",
+    "wineBoxEssentials": "WineBox Essentials",
+    "zip": "Zip Code: ",
+    "phone": "Phone: ",
+    "socialMedia": "Social Media"
+  },
+  "links": {
+    "helpCenter": "Help Center"
+  }
+}
