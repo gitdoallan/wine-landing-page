@@ -31,4 +31,11 @@ export const CustomLinkContainer = styled.li`
       width: 99%;
     }
   }
+
+  @media (max-width: 1024px) {
+      &:after {
+      transition: 0.2s;
+      width: 99%;
+    }
+  }
 `;
