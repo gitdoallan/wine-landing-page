@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const Logo: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width={108} height={30}>
     <path
