@@ -11,7 +11,7 @@ export const headerLinks = {
       id: 2,
       name: 'Store',
       link: 'https://www.wine.com.br/loja-vinhos',
-      text: 'links.wine',
+      text: 'links.store',
       isExternal: true,
     },
     {
@@ -25,7 +25,7 @@ export const headerLinks = {
       id: 4,
       name: 'Offers',
       link: '#offers',
-      text: 'links.offers',
+      text: 'links.specialOffers',
       isExternal: false,
     },
     {
