@@ -12,7 +12,6 @@ export const MenuButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${props => props.theme.colors.white};
 
   @media (min-width: 1024px) {
     display: none;

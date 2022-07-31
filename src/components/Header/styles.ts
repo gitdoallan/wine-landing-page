@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 90px;
   background: ${props => props.theme.colors.purple};
+  border-bottom: ${props => props.theme.colors.purpleLight} 1px solid;
   z-index: 1;
 `;
 

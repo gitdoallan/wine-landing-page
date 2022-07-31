@@ -16,7 +16,11 @@ export const Menu: FC<MenuProps> = ({ children }) => {
   return (
     <S.MenuContainer>
       <S.MenuButton type="button" onClick={() => setIsMenuOpen(prev => !prev)}>
-        {isMenuOpen ? <X size={36} /> : <List size={36} />}
+        {isMenuOpen ? (
+          <X size={36} color={'#fdfdfd'} />
+        ) : (
+          <List size={36} color={'#fdfdfd'} />
+        )}
       </S.MenuButton>
       <S.LinksContainer isMenuOpen={isMenuOpen}>
         {headerLinks?.navLinks?.map(({ id, text, link, isExternal }) => (
