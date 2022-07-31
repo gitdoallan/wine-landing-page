@@ -1,5 +1,4 @@
 export const footerLinks = {
-
   customerService: {
     link: 'https://centraldeajuda.wine.com.br/',
     text: 'links.helpCenter',

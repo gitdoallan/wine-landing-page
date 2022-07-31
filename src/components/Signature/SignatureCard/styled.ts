@@ -27,15 +27,14 @@ export const SignatureCardContent = styled.div`
     height: 100px;
     width: 80%;
     margin: 15px 0;
-    
+
     .benefit {
       border: 1px solid;
-      
+
       width: fit-content;
       padding: 8px;
       background: none;
       color: black;
-      
     }
 
     .assign {
@@ -51,8 +50,6 @@ export const SignatureCardContent = styled.div`
         transition: 0.3s;
       }
     }
-
-
   }
 `;
 
@@ -90,7 +87,6 @@ export const PriceContainer = styled.div`
   .line3 span {
     font-size: 0.8rem;
   }
-
 `;
 
 export const PlanButton = styled.button<SignatureCardButtonProps>`

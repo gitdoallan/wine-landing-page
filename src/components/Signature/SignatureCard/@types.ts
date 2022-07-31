@@ -25,4 +25,4 @@ export type SignatureCardButtonProps = {
 
 export type IProps = {
   plan: string;
-}
+};

@@ -10,11 +10,42 @@ export const Content = styled.div`
   max-height: 700px;
 
   .child-1 {
+    padding: 10px;
+    padding-top: 50px;
     grid-area: 1 / 2 / 2 / 3;
+    color: ${({ theme }) => theme.fontColors.primary};
+
+    .top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-right: 20px;
+      color: ${({ theme }) => theme.fontColors.grayLight};
+    }
+
+    .title {
+      color: ${({ theme }) => theme.fontColors.primary};
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+        font-weight: 500;
+        :last-child {
+          font-weight: 600;
+          line-height: 1.4rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .sub {
+      padding: 10px;
+      color: ${({ theme }) => theme.colors.red};
+    }
   }
 
   .child-2 {
-    border: 1px solid #111;
     grid-area: 1 / 1 / 4 / 2;
     position: relative;
     display: flex;
@@ -46,16 +77,19 @@ export const Content = styled.div`
   }
 
   .child-3 {
+    padding-bottom: 50px;
     grid-area: 2 / 2 / 4 / 3;
+    display: flex;
+    gap: 16px;
   }
 
   @media (max-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: px;
     grid-row-gap: 0px;
-    max-height: 1000px;
+    max-height: 1300px;
     height: 2000px;
 
     .child-1 {
@@ -65,7 +99,7 @@ export const Content = styled.div`
     }
 
     .child-2 {
-      grid-area: 2 / 1 / 7 / 2;
+      grid-area: 2 / 1 / 6 / 2;
       height: 500px;
 
       img {
@@ -95,9 +129,12 @@ export const Content = styled.div`
     }
 
     .child-3 {
-      grid-area: 7 / 1 / 9 / 2;
-      /* height: 200px;
-      max-height: 200px; */
+      grid-area: 6 / 1 / 8 / 2;
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 700px;
     }
   }
 `;

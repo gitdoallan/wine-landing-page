@@ -9,14 +9,14 @@ export const Signature: FC = () => {
   return (
     <S.Content>
       <div className="child-1">
-        <div>
-          <div>
+        <div className="top">
+          <div className="title">
             <p>WineBox</p>
             <p>ESSÊNCIA S</p>
           </div>
           <p>MAIS DETALHES</p>
         </div>
-        <p>
+        <p className="sub">
           Rótulos descomplicados, perfeitos para quem está começando a desbravar
           o mundo do vinho.
         </p>
@@ -29,8 +29,8 @@ export const Signature: FC = () => {
       </div>
 
       <div className="child-3">
-        <SignatureCard plan="Mensal"/>
-        <SignatureCard plan="Anual"/>
+        <SignatureCard plan="Mensal" />
+        <SignatureCard plan="Anual" />
       </div>
     </S.Content>
   );

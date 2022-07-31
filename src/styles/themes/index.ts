@@ -13,6 +13,6 @@ export const defaultTheme = {
   fontColors: {
     primary: '#000',
     grayLight: '#BEB4BF',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
   },
 };

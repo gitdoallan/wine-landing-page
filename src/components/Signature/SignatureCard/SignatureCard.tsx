@@ -1,16 +1,15 @@
 import React from 'react';
 
+import { IProps } from './@types';
 import * as S from './styled';
-
-import {IProps} from './@types'
 
 const SignatureCard: React.FC<IProps> = ({ plan }: IProps) => (
   <S.SignatureCardContainer>
     <S.SignatureCardContent>
       <S.PlansContainer>
         <div>
-          <p className='plan'>{plan}</p>
-          <p className='year'>{plan}</p>
+          <p className="plan">{plan}</p>
+          <p className="year">{plan}</p>
         </div>
         <S.PlanButton
           type="button"
@@ -26,16 +25,21 @@ const SignatureCard: React.FC<IProps> = ({ plan }: IProps) => (
       </S.PlansContainer>
 
       <S.PriceContainer>
-        <p className='line1'>De <span>R$ 99,90</span> por</p>
-        <p className='line2'><span>R$</span> R$ 79,92 <span>/mes</span></p>
-        <p className='line3'>Economia de R$ 15,98 em 1 mes</p>
+        <p className="line1">
+          De <span>R$ 99,90</span> por
+        </p>
+        <p className="line2">
+          <span>R$</span> R$ 79,92 <span>/mes</span>
+        </p>
+        <p className="line3">Economia de R$ 15,98 em 1 mes</p>
       </S.PriceContainer>
-    
-      <div className="buttons">
-        <button className='benefit' type="button">2 Tacas de cristal</button>
-        <button className='assign' type="button">{`Assinatura ${plan}`}</button>
-      </div>
 
+      <div className="buttons">
+        <button className="benefit" type="button">
+          2 Tacas de cristal
+        </button>
+        <button className="assign" type="button">{`Assinatura ${plan}`}</button>
+      </div>
     </S.SignatureCardContent>
   </S.SignatureCardContainer>
 );

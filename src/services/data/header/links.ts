@@ -1,9 +1,8 @@
-
 const defaultOptions = {
   smooth: true,
   duration: 500,
   offset: -90,
-}
+};
 
 export const headerLinks = {
   navLinks: [
@@ -35,8 +34,8 @@ export const headerLinks = {
       text: 'links.specialOffers',
       isExternal: false,
       options: {
-        ...defaultOptions
-      }
+        ...defaultOptions,
+      },
     },
     {
       id: 5,

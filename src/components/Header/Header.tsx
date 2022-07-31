@@ -1,7 +1,6 @@
 import { FC } from 'react';
 
 import winebox from '../../assets/winebox.png';
-import { LanguageSelector } from '../LanguageSelector';
 import { Logo } from '../Logo';
 import { Menu } from './Menu';
 import * as S from './styles';
@@ -13,7 +12,6 @@ export const Header: FC = () => (
       <Menu>
         <S.WineBox>
           <img src={winebox} />
-          <LanguageSelector />
         </S.WineBox>
       </Menu>
     </S.HeaderContent>
